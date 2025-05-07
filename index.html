@@ -1,5 +1,190 @@
-<html>
-  <h1>Project 3: portfolio</h1>
-  <h1>Soe Kaythi</h1>
-  <h2>Major - Internet and Information Technology </h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soe Kaythi Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1f5f9;
+      font-family: 'Segoe UI', sans-serif;
+      padding-bottom: 100px;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      margin: 1rem auto;
+      background: linear-gradient(to right, #8b5cf6, #3b82f6);
+      border-radius: 5px;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+      cursor: pointer;
+    }
+
+    .btn-gradient {
+      border: 2px solid transparent;
+      background-image: linear-gradient(to right, #a855f7, #3b82f6);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      transition: background 0.3s;
+      font-weight: 500;
+    }
+
+    .btn-gradient:hover {
+      background-image: linear-gradient(to right, #7c3aed, #2563eb);
+    }
+
+    .fixed-bottom-nav {
+      background-color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- About Section -->
+<div class="section text-center" id="about">
+  <div class="container">
+    <div class="card p-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <!-- Carousel Start -->
+          <div id="aboutCarousel" class="carousel slide carousel-dark overflow-hidden shadow-sm rounded" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/profile1.JPG" class="d-block w-100" alt="Soe Kaythi Profile 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/profile2.JPG" class="d-block w-100" alt="Soe Kaythi Profile 2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/profile3.JPG" class="d-block w-100" alt="Soe Kaythi Profile 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <!-- Carousel End -->
+        </div>
+        <div class="col-md-6">
+          <h1 class="fw-bold">Hi, I'm Soe Kaythi</h1>
+          <div class="divider"></div>
+          <p class="lead">
+            I'm an aspiring software developer, nature enthusiast, and passionate problem solver. Whether I’m debugging a challenge or enjoying a hike, I bring curiosity, creativity, and focus. I aim to build software that not only works — but makes life better.
+          </p>
+          <a href="mailto:soe.kaythi38@student.qcc.cuny.edu" class="btn-gradient mt-3">Email Me</a>
+          <a href="files/Soe_Kaythi_Resume.pdf" class="btn btn-outline-secondary mt-3 ms-2" download>Download My Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="section text-center" id="projects">
+  <div class="container">
+    <h2 class="fw-bold">Projects</h2>
+    <div class="divider"></div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card project-card h-100">
+          <img src="images/Kay Jewelers.pdf" class="card-img-top" alt="Kay Jewelry Website Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Kay Jewelry Website</h5>
+            <p class="card-text">An ecommerce responsive website showcasing my frontend development skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GitHub Section -->
+<div class="section text-center" id="github">
+  <div class="container">
+    <h2 class="fw-bold">GitHub Projects</h2>
+    <div class="divider"></div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">To-Do App (React)</h5>
+            <p class="card-text">A task manager built using React and local storage.</p>
+            <a href="https://github.com/s-katie" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work Experience -->
+<div class="section text-center" id="experience">
+  <div class="container">
+    <h2 class="fw-bold">Work Experience</h2>
+    <div class="divider"></div>
+    <p>1+ years experience assisting jewelry e-commerce and personal portfolio development projects.</p>
+  </div>
+</div>
+
+<!-- Contact Footer Section -->
+<section class="section text-center bg-white" id="footer">
+  <div class="container">
+    <h2 class="fw-bold display-6 text-dark">Let me be a part of your next project.</h2>
+    <div class="divider"></div>
+    <p class="lead text-secondary mb-4">If you need a modern and powerful website for your business,<br>startup or yourself, I am available for work.</p>
+    <a href="mailto:soe.kaythi38@student.qcc.cuny.edu" class="btn-gradient">Email me</a>
+    <p class="mt-4 fw-medium text-dark">Or hire me on</p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://www.linkedin.com" target="_blank">
+        <img src="images/linkedin.png" class="social-icon" alt="LinkedIn" style="width: 60px; height: 60px; border-radius: 50%; background-color: white;">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Fixed Bottom Navigation -->
+<nav class="navbar fixed-bottom border-top shadow-sm fixed-bottom-nav">
+  <div class="container justify-content-around">
+    <a class="nav-link text-dark fw-semibold" href="#about">About Me</a>
+    <a class="nav-link text-dark fw-semibold" href="#projects">Projects</a>
+    <a class="nav-link text-dark fw-semibold" href="#experience">Work Experience</a>
+    <a class="nav-link text-dark fw-semibold" href="#footer">Contact</a>
+  </div>
+</nav>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
